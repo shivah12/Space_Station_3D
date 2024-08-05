@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'SF Distant Galaxy';
+  src: local('SF Distant Galaxy'), url(fonts/SF\ Distant\ Galaxy.ttf), format('ttf');
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: 'SF Distant Galaxy';
+}
+
+/* Remove default link styles */
+a {
+  color: inherit; /* Links will inherit the color from their parent element */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #dcdcdc; /* Change link color in navbar to light gray */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffffff; /* Change color for active link */
+}
+
+/* Ensure navbar items are evenly spaced */
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem; /* Adjust space between items as needed */
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black; /* You can add a background image or gradient */
+  position: relative; /* Ensure positioning for the 3D model */
+}
+
+#hero-3d-model {
+  width: 100%;
+  height: 100%;
+  /* Adjust as needed for your 3D model */
+  position: absolute; /* Fixed in the hero section */
+}
+
+#about {
+  margin-top: 2rem;
+}
+
+#progress-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progress {
+  font-size: 3em;
+  color: white;
+}
